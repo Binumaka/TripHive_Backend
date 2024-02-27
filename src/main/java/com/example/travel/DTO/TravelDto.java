@@ -9,12 +9,12 @@ import org.antlr.v4.runtime.misc.NotNull;
 @NoArgsConstructor
 @AllArgsConstructor
 
-public class traveldto {
+public class TravelDto {
 
     private Integer id;
 
     @NotNull
-    private String plantname;
+    private String destinationname;
 
     @NotNull
     private String imageurl;
@@ -26,16 +26,7 @@ public class traveldto {
     private String description;
 
     @NotNull
-    private String height;
-
-    @NotNull
     private String category;
-
-    @NotNull
-    private String pot;
-
-    @NotNull
-    private String tempertaure;
 
     @NotNull
     private String section;
