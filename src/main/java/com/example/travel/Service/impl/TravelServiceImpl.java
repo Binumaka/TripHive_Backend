@@ -25,7 +25,6 @@ public class TravelServiceImpl implements travelService {
         }
 
         travel.setDestinationname(traveldto.getDestinationname());
-        travel.setPrice(traveldto.getPrice());
         travel.setDescription(traveldto.getDescription());
         travel.setCategory(traveldto.getCategory());
         travel.setSection(traveldto.getSection());
@@ -58,7 +57,6 @@ public class TravelServiceImpl implements travelService {
             travel existingDestination = optionalDestination.get();
 
             existingDestination.setDestinationname(TravelDto.getDestinationname());
-            existingDestination.setPrice(TravelDto.getPrice());
             existingDestination.setDescription(TravelDto.getDescription());
             existingDestination.setCategory(TravelDto.getCategory());
             existingDestination.setSection(TravelDto.getSection());

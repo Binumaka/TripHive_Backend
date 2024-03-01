@@ -5,27 +5,32 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.antlr.v4.runtime.misc.NotNull;
 
+import java.util.List;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 
-public class TravelDto {
+public class BookingDTO {
 
     private Integer id;
 
     @NotNull
-    private String destinationname;
+    private String email;
 
     @NotNull
-    private String imageurl;
+    private String username;
 
     @NotNull
-    private String description;
+    private String address;
 
     @NotNull
-    private String category;
+    private String phoneNumber;
 
     @NotNull
-    private String section;
+    private List<String> destinations;
+
+    @NotNull
+    private String BudgetAmount;
 
 }

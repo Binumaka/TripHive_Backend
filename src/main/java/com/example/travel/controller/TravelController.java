@@ -35,9 +35,11 @@ public class TravelController {
         return travelService.getAll();
     }
 
-    @GetMapping("/getById/{id}")
-    public Optional<travel> getById(@PathVariable("id") Integer id) {
-        return travelService.getById(id);
+    @GetMapping("/travelling/{id}")
+    public ResponseEntity<travel> getTravelById(@PathVariable Integer id) {
+        Optional<travel> travelOptional = travelService.getById(id);
+        return travelOptional.map(ResponseEntity::ok)
+                .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
     @PutMapping("/update/{id}")

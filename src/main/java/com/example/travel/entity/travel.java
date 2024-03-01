@@ -26,9 +26,6 @@ public class travel {
     @Column(name = "imageurl")
     private String imageurl;
 
-    @Column(name = "price", nullable = false)
-    private String price;
-
     @Column(name = "description", nullable = false)
     private String description;
 
